@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class BreakableBlock : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //If in the future want to toggle from inspector:
+    //[SerializeField] breakBlock = false
 
+    // Start is called before the first frame update
     void Start()
     {
         
@@ -17,9 +19,18 @@ public class BreakableBlock : MonoBehaviour
         if (other.gameObject.tag == "Player"){
             //Play Block Breaking Animation
 
-            
+
             //make breakable wall disappear
+            BreakBlock(true);
+        }
+    }
+
+    void BreakBlock(bool breakable) {
+        if (breakable == true){
             gameObject.SetActive(false);
+        }
+        else {
+            gameObject.SetActive(true);
         }
     }
 }
