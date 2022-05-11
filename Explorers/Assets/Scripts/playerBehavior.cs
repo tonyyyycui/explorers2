@@ -1,19 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Sprites;
 public class playerBehavior : MonoBehaviour
 {
 
     [SerializeField] public float moveSpeed = 5f;
     public Rigidbody2D rb;
-
+    private SpriteRenderer s_renderer;
     Vector2 movement;
-
     // Start is called before the first frame update
     void Start()
     {
-        
+        s_renderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -24,17 +23,15 @@ public class playerBehavior : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
 
-        /*
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
-        if (Input.GetKey(KeyCode.A))
-            rb.AddForce(Vector3.left);
-        if (Input.GetKey(KeyCode.D))
-            rb.AddForce(Vector3.right);
-        if (Input.GetKey(KeyCode.W))
-            rb.AddForce(Vector3.up);
-        if (Input.GetKey(KeyCode.S))
-            rb.AddForce(Vector3.down);
-        */
+        if (Input.GetKey(KeyCode.A)){
+            s_renderer.flipX = true;
+        }
+            
+        else if (Input.GetKey(KeyCode.D)){
+            s_renderer.flipX = false;
+        }
+
     }
 
     private void FixedUpdate()
