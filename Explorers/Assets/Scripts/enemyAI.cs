@@ -6,12 +6,14 @@ public class enemyAI : MonoBehaviour
 {
     public float min = 2f;
     public float max = 3f;
+    public float distanceToTheRight;
+    public float movementSpeeds;
     // Use this for initialization
     void Start()
     {
 
         min = transform.position.x;
-        max = transform.position.x + 3;
+        max = transform.position.x + distanceToTheRight;
 
     }
 
@@ -20,7 +22,7 @@ public class enemyAI : MonoBehaviour
     {
 
 
-        transform.position = new Vector3(Mathf.PingPong(Time.time * 2, max - min) + min, transform.position.y, transform.position.z);
+        transform.position = new Vector3(movementSpeeds* Mathf.PingPong(Time.time * 2, max - min) + min, transform.position.y, transform.position.z);
 
     }
 }

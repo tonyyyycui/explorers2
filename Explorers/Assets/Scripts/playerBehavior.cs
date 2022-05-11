@@ -19,8 +19,16 @@ public class playerBehavior : MonoBehaviour
     void Update()
     {
 
-        movement.x = Input.GetAxisRaw("Horizontal");
-        movement.y = Input.GetAxisRaw("Vertical");
+        if (this.gameObject.name == "Sia")
+        {
+            movement.y = -Input.GetAxisRaw("Horizontal");
+            movement.x = -Input.GetAxisRaw("Vertical");
+        }
+        else
+        {
+            movement.x = Input.GetAxisRaw("Horizontal");
+            movement.y = Input.GetAxisRaw("Vertical");
+        }
 
 
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
