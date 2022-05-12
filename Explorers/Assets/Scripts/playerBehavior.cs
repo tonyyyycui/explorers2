@@ -10,9 +10,11 @@ public class playerBehavior : MonoBehaviour
     private SpriteRenderer s_renderer;
     Vector2 movement;
     // Start is called before the first frame update
+
     void Start()
     {
         s_renderer = GetComponent<SpriteRenderer>();
+
     }
 
     // Update is called once per frame

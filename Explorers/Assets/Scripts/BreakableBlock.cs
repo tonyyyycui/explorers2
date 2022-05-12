@@ -18,11 +18,14 @@ public class BreakableBlock : MonoBehaviour
         if (other.gameObject.tag == "Player" && bombs.getBombs() > 0){
             //Play Block Breaking Animation
 
+            //Play Block Breaking Voice line?
+
 
             //make breakable wall disappear
             BreakBlock(true);
             //Update Bomb UI
             bombs.decreaseBomb();
+
         }
     }
 
