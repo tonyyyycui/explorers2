@@ -5,12 +5,13 @@ using UnityEngine.UI;
 public class Update_Bomb : MonoBehaviour
 {
     // Start is called before the first frame update
-    Text bombText;
-    int currentBombs;
+    public Text bombText;
+    public int currentBombs;
     void Start()
     {
-        bombText = GetComponent<Text>();
+        bombText = GameObject.Find("BombCount").GetComponent<Text>();
         currentBombs = 3;
+        bombText.text = "Bombs left:" + currentBombs;
     }
 
     // Update is called once per frame
