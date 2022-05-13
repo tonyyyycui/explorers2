@@ -18,7 +18,7 @@ public class Asta_WallBreak : MonoBehaviour
 
     // Update is called once per frame
     void OnCollisionEnter2D(Collision2D other){
-        if (other.gameObject.tag == "BreakableWall" && bombs.getBombs() > 0){
+        if (other.gameObject.tag == "BreakableWall" && bombs.getBombs() > -1){
             //Freeze player for a few seconds
             explosion.Play(0);
             StartCoroutine(freezePlayer());
