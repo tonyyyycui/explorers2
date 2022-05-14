@@ -684,6 +684,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 284113850b4dbc649aa2ac4341bc494a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  restartLevelSound: {fileID: 0}
 --- !u!4 &878121974 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5733974255969934609, guid: 18aa95c91ac1eb94c82c63783c736a55, type: 3}
@@ -7629,6 +7630,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 284113850b4dbc649aa2ac4341bc494a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  restartLevelSound: {fileID: 8300000, guid: bc8b585177b33cb4b81cbf9b4d3b5fa3, type: 3}
 --- !u!114 &1601403518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7642,6 +7644,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bombs: {fileID: 0}
+  explosion: {fileID: 8300000, guid: 95bb6bc34d9728b4e9db4e91e2440739, type: 3}
 --- !u!82 &1601403519
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7652,7 +7655,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 95bb6bc34d9728b4e9db4e91e2440739, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
