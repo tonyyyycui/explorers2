@@ -3324,8 +3324,8 @@ GameObject:
   - component: {fileID: 1601403512}
   - component: {fileID: 1601403516}
   m_Layer: 0
-  m_Name: Sia
-  m_TagString: Untagged
+  m_Name: MainCharacter_Sia
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
