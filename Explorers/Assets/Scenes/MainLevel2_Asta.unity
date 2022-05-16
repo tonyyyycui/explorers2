@@ -6954,7 +6954,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594111250}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -0.2, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7125,6 +7125,7 @@ GameObject:
   - component: {fileID: 1601403518}
   - component: {fileID: 1601403519}
   - component: {fileID: 1601403520}
+  - component: {fileID: 1601403521}
   m_Layer: 0
   m_Name: MainCharacter_Asta
   m_TagString: Player
@@ -7373,6 +7374,26 @@ CapsuleCollider2D:
   m_Offset: {x: -0.01861821, y: -0.1352366}
   m_Size: {x: 0.50358564, y: 0.7594084}
   m_Direction: 0
+--- !u!95 &1601403521
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601403511}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 78015ebac56334cd08e9612ea62b34ac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1668412589
 GameObject:
   m_ObjectHideFlags: 0
