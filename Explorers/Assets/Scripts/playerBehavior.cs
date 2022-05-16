@@ -14,6 +14,10 @@ public class playerBehavior : MonoBehaviour
     void Start()
     {
         s_renderer = GetComponent<SpriteRenderer>();
+        if (this.gameObject.name == "Sia"){
+            moveSpeed = moveSpeed * 0.7f;
+
+        }
 
     }
 
