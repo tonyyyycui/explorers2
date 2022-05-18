@@ -21,4 +21,9 @@ public class MainMenuController : MonoBehaviour
     {
         SceneManager.LoadScene(1);
     }
+
+    public void restartGame()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
